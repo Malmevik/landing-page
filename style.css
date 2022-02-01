@@ -1,6 +1,7 @@
 body{
     display : flex;
     flex-direction: column;
+    justify-content : space-between;
     margin : 0px;
 }
 
@@ -15,8 +16,6 @@ body{
 }
 .header.links button{
     margin : 10px;
-    box-shadow: darkblue;
-
 }
 .header.links a{
         text-decoration: none;
@@ -30,15 +29,87 @@ body{
 .header .title{
     display : flex;
     align-items: center;
+    height : auto;
 }
 .header .title p{
     font-size : 28px;
-    font-weight: 700;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-family: Supermercado;
 }
 
+.title-box{
+    display : flex;
+    padding-top: 75px;
+    padding-bottom : 75px;
+    padding-left : 200px;
+    padding-right : 200px;
+    justify-content: space-around;
+    background-color: darkgoldenrod;
+}
+
+.title-box .title{
+    font-family: supermercado;
+    font-size: 32px;
+}
+
+.title-image img{
+    width : 500px;
+    height: auto;
+    flex-shrink: 0;
+}
 
 .information-box{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color :chocolate;
+    flex-direction: column;
+    padding-left : 400px;
+    padding-right : 400px;
+}
 
+.information-box .title{
+    font-size: 32px;
+    font-weight: 300;
+    font-family: supermercado;
+
+}
+
+.items{
+    display : flex;
+    flex-flow: row wrap;
+    flex : 0 0 75%;
+    justify-content: center;
+}
+
+.item{
+    border : 3 px;
+    background-color: black;
+    border-radius: 12px;
+    height: 100px;
+    width : 100px;
+    margin : 32px;
+    border-color: black;
+}
+
+.quote-box{
+    background-color :darkolivegreen;
+}
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    background-color :cadetblue;
+    padding : 12px;
+}
+
+
+
+@font-face {
+    font-family: Supermercado;
+    src: url(fonts/SupermercadoOne-Regular.ttf);
 }
