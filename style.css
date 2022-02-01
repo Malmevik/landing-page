@@ -17,8 +17,8 @@ body{
 .header.links button{
     margin : 10px;
 }
-.header.links a{
-        text-decoration: none;
+a{
+    text-decoration: none;
 }
 .header img{
     color : transparent;
@@ -37,25 +37,48 @@ body{
     font-family: Supermercado;
 }
 
+.secotion-one{
+    display: flex;
+    justify-content: center;
+
+}
 .title-box{
     display : flex;
-    padding-top: 75px;
-    padding-bottom : 75px;
-    padding-left : 200px;
-    padding-right : 200px;
     justify-content: space-around;
-    background-color: darkgoldenrod;
+    background-color: goldenrod;
+    border-radius: 8px;
+    width : 85%;
+    height: 100%;
+    margin: 9em auto 9em auto;
 }
 
-.title-box .title{
+.leftbox .title{
     font-family: supermercado;
     font-size: 32px;
+}
+
+.caption{
+    text-align: center;
+    padding-top: 12px;
+}
+
+.title-text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.join{
+margin-top: 20px;
+
 }
 
 .title-image img{
     width : 500px;
     height: auto;
     flex-shrink: 0;
+    border : 3px solid white;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 0.75rem black);
 }
 
 .information-box{
@@ -80,26 +103,35 @@ body{
     flex-flow: row wrap;
     flex : 0 0 75%;
     justify-content: center;
+    padding-bottom : 40px;
 }
 
 .item{
-    border : 3 px;
-    background-color: black;
+    border : 3px solid white;
     border-radius: 12px;
+    background-color: black;
     height: 100px;
     width : 100px;
     margin : 32px;
-    border-color: black;
+    filter: drop-shadow(0 0 0.75rem black);
+
+    text-align: center;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    mask-image: inherit;
+    border-radius: 8px;
 }
 
 .quote-box{
     background-color :darkolivegreen;
+    background-image: url(images/dibby.png);
+    background-size: cover;
+    object-fit: cover;
+    filter: blur(4px);
 }
-
-
-
-
-
 
 .footer{
     text-align: center;
@@ -107,9 +139,18 @@ body{
     padding : 12px;
 }
 
-
-
 @font-face {
     font-family: Supermercado;
     src: url(fonts/SupermercadoOne-Regular.ttf);
+}
+
+
+.right-box{
+ justify-content: center;
+ margin : 30px;
+}
+
+.leftbox{
+    padding : 40px;
+    flex-direction: column;
 }
