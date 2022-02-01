@@ -1,0 +1,44 @@
+body{
+    display : flex;
+    flex-direction: column;
+    margin : 0px;
+}
+
+.header{
+    background-color :cadetblue;
+    display : flex;
+    justify-content: space-around;
+}
+.header.links{
+    display: flex;
+    align-items: center;
+}
+.header.links button{
+    margin : 10px;
+    box-shadow: darkblue;
+
+}
+.header.links a{
+        text-decoration: none;
+}
+.header img{
+    color : transparent;
+    width : 40px;
+    height : 40px;
+    margin : 8px;
+}
+.header .title{
+    display : flex;
+    align-items: center;
+}
+.header .title p{
+    font-size : 28px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.information-box{
+    display: flex;
+
+}
